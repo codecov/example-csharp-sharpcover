@@ -1,0 +1,13 @@
+bin/
+obj/
+*.[Rr]e[Ss]harper*
+*[Nn]crunch*
+/example.sln.DotSettings.user
+*.csproj.user
+log.txt
+*/logs/*
+packages/*
+/.vs
+.env
+TestResult.xml
+coverage.json

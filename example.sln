@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{C818A9B7-CC7C-499E-9497-13497ABC7FD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{02E455EF-8447-40D8-87A6-7C92AC4A83AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Tests", "Tests\Domain.Tests\Domain.Tests.csproj", "{AF7FB4C2-F15C-4762-920A-6F458A8ECCE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContinuousIntegration", "ContinuousIntegration", "{3D67AF1D-D489-41DF-8963-514194CA3B97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{C9A06037-855A-4671-804C-B032DCAD2F99}"
+	ProjectSection(SolutionItems) = preProject
+		ContinuousIntegration\Build\generateCoverageConfig.sh = ContinuousIntegration\Build\generateCoverageConfig.sh
+		Makefile = Makefile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C818A9B7-CC7C-499E-9497-13497ABC7FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C818A9B7-CC7C-499E-9497-13497ABC7FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C818A9B7-CC7C-499E-9497-13497ABC7FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C818A9B7-CC7C-499E-9497-13497ABC7FD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7FB4C2-F15C-4762-920A-6F458A8ECCE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7FB4C2-F15C-4762-920A-6F458A8ECCE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7FB4C2-F15C-4762-920A-6F458A8ECCE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7FB4C2-F15C-4762-920A-6F458A8ECCE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF7FB4C2-F15C-4762-920A-6F458A8ECCE0} = {02E455EF-8447-40D8-87A6-7C92AC4A83AA}
+		{C9A06037-855A-4671-804C-B032DCAD2F99} = {3D67AF1D-D489-41DF-8963-514194CA3B97}
+	EndGlobalSection
+EndGlobal
