@@ -1,0 +1,11 @@
+language: csharp
+sudo: required
+before_install:
+  - wget --no-check-certificate https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+install:
+  - mono ./nuget.exe install NUnit.Runners -Version 3.0.1 -OutputDirectory testrunner
+script:
+  - make compile test
+after_script:
+  - make coverage
+  - bash <(curl -s https://codecov.io/bash)
