@@ -1,9 +1,8 @@
-﻿namespace Codecov.Example.Domain.Tests
+using FluentAssertions;
+using NUnit.Framework;
+
+namespace Codecov.Example.Domain.Tests
 {
-    using FluentAssertions;
-
-    using NUnit.Framework;
-
     [TestFixture]
     public class WhenRequestingNumber
     {
@@ -13,13 +12,13 @@
         public void EstablishContext()
         {
             var sut = new Game();
-            this.result = sut.RequestNumber();
+            result = sut.RequestNumber();
         }
 
         [Test]
         public void ShouldGiveBackAPositiveNumber()
         {
-            this.result.Should().BeGreaterThan(0);
+            result.Should().BeGreaterThan(0);
         }
     }
 }
