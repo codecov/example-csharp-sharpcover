@@ -1,0 +1,7 @@
+# In this repository, actual configuration is created during Build.
+# This file serves as a reference if you don't want to create it dynamically.
+{
+  "assemblies": ["Tests/Domain.Tests/bin/Release/Codecov.Example.Domain.dll"],
+  "typeInclude": "Codecov.Example.*",
+  "typeExclude": "Codecov.Example.*Tests*"
+}
