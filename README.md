@@ -1,7 +1,3 @@
-------
-> Work in progress. Support for SharCover is not complete yet. Thank you for your patience.
-------
-
 [Codecov][0] C# Example using SharpCover
 ========================================
 
