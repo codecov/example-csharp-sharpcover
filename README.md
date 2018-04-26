@@ -11,8 +11,7 @@
 
 > Also see out [C# Example][1]
 
-
-
+We are happy to help if you have any questions. Please contact email our Support at [support@codecov.io](mailto:support@codecov.io)
 
 [0]: https://codecov.io/
 [1]: https://github.com/codecov/example-csharp
