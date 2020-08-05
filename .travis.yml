@@ -5,6 +5,7 @@ before_install:
 install:
   - mono ./nuget.exe install NUnit.Runners -Version 3.0.1 -OutputDirectory testrunner
 script:
+  - make compile test
   - make coverage
 after_script:
   - bash <(curl -s https://codecov.io/bash)
