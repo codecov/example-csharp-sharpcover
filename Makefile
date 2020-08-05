@@ -4,7 +4,7 @@ clean:
 
 compile: clean
 	nuget restore example.sln
-	xbuild /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release example.sln
+	msbuild /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release example.sln
 
 test:
 	nuget install NUnit.Runners -Version 3.0.1 -OutputDirectory tools
