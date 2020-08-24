@@ -7,8 +7,8 @@ compile: clean
 	xbuild /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release example.sln
 
 test:
-	nuget install NUnit.Runners -Version 3.0.1 -OutputDirectory tools
-	mono ./tools/NUnit.Console.3.0.1/tools/nunit3-console.exe -workers 1 `(find Tests -name *Tests.dll | grep -v obj/Release)`
+	nuget install NUnit.Runners -Version 3.11.1 -OutputDirectory tools
+	mono ./tools/NUnit.Console.3.11.1/tools/nunit3-console.exe -workers 1 `(find Tests -name *Tests.dll | grep -v obj/Release)`
 
 coverageconfig:
 	./ContinuousIntegration/Build/generateCoverageConfig.sh > ./coverageConfig.json
