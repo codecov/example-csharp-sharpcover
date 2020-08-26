@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-csharp-sharpcover.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-csharp-sharpcover?ref=badge_shield)
+
 ------
 > Work in progress. Support for SharCover is not complete yet. Thank you for your patience.
 ------
@@ -15,3 +17,7 @@ We are happy to help if you have any questions. Please contact email our Support
 
 [0]: https://codecov.io/
 [1]: https://github.com/codecov/example-csharp
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-csharp-sharpcover.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-csharp-sharpcover?ref=badge_large)
