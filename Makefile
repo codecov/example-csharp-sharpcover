@@ -3,8 +3,8 @@ clean:
 	-find -type d -name obj -exec rm -rf {} \;
 
 compile: clean
-	nuget restore example.sln
-	# xbuild /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release example.sln
+	# nuget restore example.sln
+	xbuild /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release example.sln
 
 test:
 	nuget install NUnit.Runners -Version 3.11.1 -OutputDirectory tools
