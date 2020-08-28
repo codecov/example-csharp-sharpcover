@@ -3,7 +3,6 @@ sudo: required
 
 before_install:
   - wget --no-check-certificate https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
-  - nuget.exe update -self
 
 install:
   - mono ./nuget.exe install NUnit.Runners -Version 3.11.1 -OutputDirectory testrunner
