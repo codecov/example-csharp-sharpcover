@@ -4,7 +4,7 @@ clean:
 
 compile: clean
 	nuget restore example.sln
-	msbuild /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release example.sln
+	xbuild /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release example.sln
 
 test:
 	nuget install NUnit.Runners -Version 3.11.0 -OutputDirectory tools
@@ -13,6 +13,7 @@ test:
 coverageconfig:
 	./ContinuousIntegration/Build/generateCoverageConfig.sh > ./coverageConfig.json
 	cat ./coverageConfig.json
+	ls /home/travis/build/codecov/example-csharp-sharpcover/Tests/Domain.Tests/bin/Release/
 
 instrument: coverageconfig
 	mono ./tools/SharpCover/SharpCover.exe instrument ./coverageConfig.json
