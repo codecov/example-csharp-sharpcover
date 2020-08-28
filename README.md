@@ -1,5 +1,7 @@
 # [Codecov](https://codecov.io) C# Example using SharpCover
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-csharp-sharpcover.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-csharp-sharpcover?ref=badge_shield)
+
 **Work in progress. Support for SharpCover is not complete yet.
 Thank you for your patience.**
 
@@ -21,3 +23,6 @@ Repository tokens are required for (a) all private repos, (b) public repos not u
 [1]: https://github.com/codecov/example-csharp
 [2]: https://github.com/codecov/example-csharp-sharpcover/blob/master/Makefile#L17-L21
 [3]: https://github.com/codecov/example-csharp-sharpcover/blob/master/.travis.yml#L11
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcodecov%2Fexample-csharp-sharpcover.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcodecov%2Fexample-csharp-sharpcover?ref=badge_large)
