@@ -3,7 +3,7 @@ clean:
 	-find -type d -name obj -exec rm -rf {} \;
 
 compile: clean
-	# nuget restore example.sln
+	nuget restore example.sln
 	xbuild /p:TargetFrameworkVersion="v4.5" /p:Configuration=Release example.sln
 
 test:
