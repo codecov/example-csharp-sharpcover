@@ -12,6 +12,7 @@ test:
 
 coverageconfig:
 	./ContinuousIntegration/Build/generateCoverageConfig.sh > ./coverageConfig.json
+	cat ./coverageConfig.json
 
 instrument: coverageconfig
 	mono ./tools/SharpCover/SharpCover.exe instrument ./coverageConfig.json
